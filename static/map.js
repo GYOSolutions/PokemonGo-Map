@@ -213,8 +213,8 @@ function initMap() {
 
     map = new google.maps.Map(document.getElementById('map'), {
         center: {
-            lat: center_lat,
-            lng: center_lng
+            lat: 19.4326018,
+            lng: -99.1353936
         },
         zoom: 16,
         fullscreenControl: true,
@@ -281,11 +281,12 @@ function initMap() {
 function createSearchMarker() {
     marker = new google.maps.Marker({ //need to keep reference.
         position: {
-            lat: center_lat,
-            lng: center_lng
+            lat: 19.4326018,
+            lng: -99.1353936
         },
         map: map,
         animation: google.maps.Animation.DROP,
+        icon: 'static/appicons/logo30x30.png',
         draggable: true
     });
 
